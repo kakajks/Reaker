@@ -20,14 +20,20 @@ public class Draw extends JLabel {
 
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		//Background
 		g.setColor(new Color(0, 130, 255));
 		g.fillRect(0, 0, 800, 600);
+		g.drawImage(ImageLoader.Wolke, 0, 0, 800, 600, null);
+		//Schrift
 		g.setColor(new Color(150, 20, 40));
 		g.setFont(ImageLoader.Font.deriveFont(40f));
 		g.drawString("Wo ist Reaker?", 200, 200);
+		
+		//Boden
 		for (int x = 0; x < 14; x++) {
-			g.drawImage(ImageLoader.grass, 64 * x + Gui.grass, 534, 64, 64, null);
+			g.drawImage(ImageLoader.grass, 64 * x  -Gui.grass, 534, 64, 64, null);
 		}
+		//Character
 		if (Gui.Character == 1) {
 			g.drawImage(ImageLoader.Char_right_1, 400, 472 + 20, 64, 64, null);
 		}

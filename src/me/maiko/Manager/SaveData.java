@@ -10,21 +10,12 @@ import java.util.ArrayList;
 public class SaveData {
 	
 
-	private static boolean exists = false;
 	
 	public static File file = new File("Data/SaveData.txt");
 	
 	
 	public static boolean isExists() {
-	if(file.exists()) {
-		exists = true;
-		
-	}else {
-		exists = false;
-		
-	}
-	return exists;
-		
+	return file.exists();
 	}
 	public static void createSaveData() {
 		try {

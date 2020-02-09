@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import me.maiko.MainMenu.Draw;
 
 public class Gui extends JFrame {
-	public static int Character = 1, grass = 0;
+	public static int Character = 1, grass = 1;
 	private static final long serialVersionUID = 1L;
 
 	public Gui() {

@@ -9,7 +9,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class ImageLoader {
-	public static Image Char_right_1, Char_right_2, Char_right_3, grass;
+	public static Image Char_right_1, Char_right_2, Char_right_3, grass,Wolke;
 	public static Font Font;
 	@SuppressWarnings("static-access")
 	public ImageLoader() {
@@ -23,6 +23,8 @@ public class ImageLoader {
 			Char_right_2 = ImageIO.read(getClass().getResourceAsStream("/character/right/right_2.png"));
 			Char_right_3 = ImageIO.read(getClass().getResourceAsStream("/character/right/right_3.png"));
 			grass = ImageIO.read(getClass().getResourceAsStream("/General/grass.png"));
+			Wolke = ImageIO.read(getClass().getResourceAsStream("/General/Wolke.png"));
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

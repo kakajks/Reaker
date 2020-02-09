@@ -26,10 +26,10 @@ public class MenuTimer {
 			
 			@Override
 			public void run() {
-				if(Gui.grass< -64) {
-					Gui.grass = 0;
+				if(Gui.grass== 64) {
+					Gui.grass = 1;
 				}else {
-					Gui.grass--;
+					Gui.grass++;
 				}
 			}
 		}, 0, 25);

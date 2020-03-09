@@ -9,7 +9,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class ImageLoader {
-	public static Image Char_right_1, Char_right_2, Char_right_3, grass,Wolke;
+	public static Image Char_right_1, Char_right_2, Char_right_3, grass,Wolke,scyth;
 	public static Font Font;
 	@SuppressWarnings("static-access")
 	public ImageLoader() {
@@ -18,6 +18,7 @@ public class ImageLoader {
 			Font = Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/Fonts/Retro.ttf"));
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/Fonts/Retro.ttf")));
+			scyth = ImageIO.read(getClass().getResourceAsStream("/character/weapon/scyth.png"));
 
 			Char_right_1 = ImageIO.read(getClass().getResourceAsStream("/character/right/right_1.png"));
 			Char_right_2 = ImageIO.read(getClass().getResourceAsStream("/character/right/right_2.png"));

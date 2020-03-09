@@ -9,7 +9,7 @@ public class Gui extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public Gui() {
-		setTitle("Wo ist Reaker?");
+		setTitle("Reaker");
 		setIconImage(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(800, 600);

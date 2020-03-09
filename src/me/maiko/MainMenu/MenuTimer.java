@@ -4,6 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import me.maiko.Gui;
+import me.maiko.Vars;
 
 public class MenuTimer {
 	Timer t;
@@ -22,6 +23,20 @@ public class MenuTimer {
 				
 			}
 		}, 0, 1000/5);
+		t.scheduleAtFixedRate(new TimerTask() {
+			
+			@Override
+			public void run() {
+				if( Vars.Start_String ) {
+					Vars.Start_String = false;
+				}else {
+					 Vars.Start_String = true;
+				}
+					
+				
+				
+			}
+		}, 0, 1000/2);
 		t.scheduleAtFixedRate(new TimerTask() {
 			
 			@Override
